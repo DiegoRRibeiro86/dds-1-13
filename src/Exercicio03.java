@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
 public class Exercicio03 {
-    static final Integer PASSOU_DE_ANO = 70;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite a sua nota: ");
-        double notaDoAluno = scanner.nextDouble();
+        Double notaDoAluno = scanner.nextDouble();
 
-        boolean passouDeAno = notaDoAluno >= PASSOU_DE_ANO;
+        Boolean passouDeAno = notaDoAluno >= 70;
 
         if (passouDeAno) {
             System.out.println("Parabéns! Você passou de ano.");

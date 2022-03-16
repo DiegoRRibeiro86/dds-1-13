@@ -1,8 +1,10 @@
-import java.util.Scanner;
+
+/* Volte no exercício 03 desse capítulo e transforme o valor 70 em uma costante. */
 
 import java.util.Scanner;
 
 public class Exercicio05 {
+
     static final Integer PASSOU_DE_ANO = 70;
 
     public static void main(String[] args) {
