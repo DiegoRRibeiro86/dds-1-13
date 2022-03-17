@@ -1,3 +1,5 @@
+package com.company;
+
 public class TiposPrimitivos {
     public static void main(String[] args) {
         String variavelString = ""; // o tipo String não possui um tipo primitivo equivalente.

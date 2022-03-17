@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class Exercicio04 {
     static final Integer IDADE_MINIMA_PARA_APOSENTAR = 55;
     static final Integer TEMPO_CONTRIBUICAO_MINIMO = 25;
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -20,9 +19,9 @@ public class Exercicio04 {
         Double tempoContribuicao = scanner.nextDouble();
 
         Boolean podeAposentar = idade >= IDADE_MINIMA_PARA_APOSENTAR;
-        Boolean tempoDeContribuicao = tempoContribuicao >= TEMPO_CONTRIBUICAO_MINIMO;
+        Boolean tempoDeContribuicaoMinimo = tempoContribuicao >= TEMPO_CONTRIBUICAO_MINIMO;
 
-        if (podeAposentar & tempoDeContribuicao) {
+        if (podeAposentar & tempoDeContribuicaoMinimo) {
             System.out.println("Você já pode se aposentar.");
         } else {
             System.out.println("\nVocê não pode se aposentar ainda.");
