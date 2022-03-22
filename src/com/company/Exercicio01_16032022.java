@@ -12,35 +12,36 @@ package com.company;
 * No final mostre para o candidato se ele conseguiu ou não.
 * */
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import com.sun.xml.internal.fastinfoset.algorithm.BooleanEncodingAlgorithm;
-
 import java.util.Scanner;
 
 public class Exercicio01_16032022 {
 
-    static final Integer MATERIA_DE_PORTUGUES = 60;
-    static final Integer MATERIA_DE_MATEMATICA = 60;
+    static final Integer NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO = 60;
+    static final Integer NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO = 60;
     static final Integer NOTA_MINIMA_TOTAL_PARA_PASSAR = 150;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite a nota que você tirou em lingua portuguesa: ");
-        Double notaPortugues = scanner.nextDouble();
+        Double notaEmPortugues = scanner.nextDouble();
         System.out.print("Digite a nota que você tirou em matemática: ");
-        Double notaMatematica = scanner.nextDouble();
+        Double notaEmMatematica = scanner.nextDouble();
 
-        Boolean notaMinimaParaPassar = notaPortugues + notaMatematica >= NOTA_MINIMA_TOTAL_PARA_PASSAR;
-        Boolean materiaDePortugues = notaPortugues >= MATERIA_DE_PORTUGUES;
-        Boolean materiaDeMatematica = notaMatematica >= MATERIA_DE_MATEMATICA;
-        Double somaDasNotas = notaPortugues + notaMatematica;
+        Boolean notaMinimaParaPassar = obterNotaMinimaParaPassar(notaEmPortugues, notaEmMatematica) >= NOTA_MINIMA_TOTAL_PARA_PASSAR;
+        Boolean notaMinimaEmPortugues = notaEmPortugues >= NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO;
+        Boolean notaMinimaEmMatematica = notaEmMatematica >= NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO;
+        Double somaDasNotas = obterNotaMinimaParaPassar(notaEmPortugues, notaEmMatematica);
 
-
-        if (notaPortugues >= 60 && notaMatematica >= 60 && notaMinimaParaPassar){
-            System.out.println("Você foi aprovado com " + somaDasNotas + " pontos.");
+        if (notaEmPortugues >= 60 && notaEmMatematica >= 60 && notaMinimaParaPassar){
+            System.out.println("\nVocê foi aprovado com " + somaDasNotas + " pontos.");
         } else {
-            System.out.println("Você não foi aprovado.");
+            System.out.println("\nVocê foi reprovado.");
         }
+        scanner.close();
+    }
+
+    private static double obterNotaMinimaParaPassar(Double notaEmPortugues, Double notaEmMatematica) {
+        return notaEmPortugues + notaEmMatematica;
     }
 }
