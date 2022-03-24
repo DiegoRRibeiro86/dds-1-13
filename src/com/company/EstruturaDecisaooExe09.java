@@ -7,15 +7,15 @@ package com.company;
 
 import java.util.Scanner;
 
-public class EstruturaDecisãoExe09 {
+public class EstruturaDecisaooExe09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int indice = 3;
-        int numeros[] = new int[indice];
+        int[] numeros = new int[indice];
 
         for (int contador = 0; contador < 3; contador ++){
-            System.out.println("Informe o valor de " + contador + "° na posição do vetor: ");
+            System.out.println("Informe o valor na posição " + contador + "º do vetor: ");
             numeros[contador] = scanner.nextInt();
         }
 

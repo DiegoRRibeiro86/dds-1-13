@@ -16,24 +16,24 @@ import java.util.Scanner;
 
 public class Exercicio01_16032022 {
 
-    static final Integer NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO = 60;
-    static final Integer NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO = 60;
-    static final Integer NOTA_MINIMA_TOTAL_PARA_PASSAR = 150;
+    static final Byte NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO = 60;
+    static final Byte NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO = 60;
+    static final Short NOTA_MINIMA_TOTAL_PARA_PASSAR = 150;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite a nota que você tirou em lingua portuguesa: ");
-        Double notaEmPortugues = scanner.nextDouble();
+        Double notaDePortugues = scanner.nextDouble();
         System.out.print("Digite a nota que você tirou em matemática: ");
-        Double notaEmMatematica = scanner.nextDouble();
+        Double notaDeMatematica = scanner.nextDouble();
 
-        Boolean notaMinimaParaPassar = obterNotaMinimaParaPassar(notaEmPortugues, notaEmMatematica) >= NOTA_MINIMA_TOTAL_PARA_PASSAR;
-        Boolean notaMinimaEmPortugues = notaEmPortugues >= NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO;
-        Boolean notaMinimaEmMatematica = notaEmMatematica >= NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO;
-        Double somaDasNotas = obterNotaMinimaParaPassar(notaEmPortugues, notaEmMatematica);
+        Double somaDasNotas = somarNotas(notaDePortugues, notaDeMatematica);
+        Boolean temNotaMinimaTotalParaPassar = somaDasNotas >= NOTA_MINIMA_TOTAL_PARA_PASSAR;
+        Boolean temNotaMinimaEmPortugues = notaDePortugues >= NOTA_MINIMA_EM_PORTUGUES_PARA_SER_APROVADO;
+        Boolean temNotaMinimaEmMatematica = notaDeMatematica >= NOTA_MINIMA_EM_MATEMATICA_PARA_SER_APROVADO;
 
-        if (notaEmPortugues >= 60 && notaEmMatematica >= 60 && notaMinimaParaPassar){
+        if (temNotaMinimaEmPortugues && temNotaMinimaEmMatematica && temNotaMinimaTotalParaPassar){
             System.out.println("\nVocê foi aprovado com " + somaDasNotas + " pontos.");
         } else {
             System.out.println("\nVocê foi reprovado.");
@@ -41,7 +41,7 @@ public class Exercicio01_16032022 {
         scanner.close();
     }
 
-    private static double obterNotaMinimaParaPassar(Double notaEmPortugues, Double notaEmMatematica) {
+    private static double somarNotas(Double notaEmPortugues, Double notaEmMatematica) {
         return notaEmPortugues + notaEmMatematica;
     }
 }
