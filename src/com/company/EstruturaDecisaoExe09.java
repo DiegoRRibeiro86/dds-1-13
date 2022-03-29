@@ -7,7 +7,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class EstruturaDecisaooExe09 {
+public class EstruturaDecisaoExe09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

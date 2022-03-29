@@ -16,8 +16,6 @@ public class EstruturaDecisãoExe08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
-
         System.out.print("Digite o valor do salmão: ");
         Double valorSalmao = scanner.nextDouble();
         System.out.print("Digite o valor da tilápia: ");

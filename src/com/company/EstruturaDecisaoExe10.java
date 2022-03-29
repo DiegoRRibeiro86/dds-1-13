@@ -9,7 +9,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class EstruturaDecisao10 {
+public class EstruturaDecisaoExe10 {
     public static void main(String[] args){
 
         Scanner scanner = new Scanner (System.in);
