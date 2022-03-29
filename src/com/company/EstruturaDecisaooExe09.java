@@ -15,7 +15,7 @@ public class EstruturaDecisaooExe09 {
         int[] numeros = new int[indice];
 
         for (int contador = 0; contador < 3; contador ++){
-            System.out.println("Informe o valor na posição " + contador + "º do vetor: ");
+            System.out.print("Informe o valor na posição " + contador + "º do vetor: ");
             numeros[contador] = scanner.nextInt();
         }
 
