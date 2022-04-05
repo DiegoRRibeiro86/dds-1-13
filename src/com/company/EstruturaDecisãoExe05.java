@@ -19,14 +19,14 @@ public class EstruturaDecisãoExe05 {
         Double primeiraNota = scanner.nextDouble();
         System.out.print("Digite sua segunda nota: ");
         Double segundaNota = scanner.nextDouble();
-
         Double somaDasNotas = primeiraNota + segundaNota;
         Double media = somaDasNotas / 2;
-
-        if (media >= 7 & media < 10) {
+        Boolean aprovado = media >= 7 && media < 10;
+        Boolean aprovadoComDistincao = media == 10;
+        if (aprovado) {
             System.out.print("\nSua média foi: " + media + ".");
             System.out.print("\nAprovado! \n");
-        } else if (media == 10) {
+        } else if (aprovadoComDistincao) {
             System.out.print("\nSua média foi: " + media + ".");
             System.out.print("\nAprovado com distinção! \n");
         } else {

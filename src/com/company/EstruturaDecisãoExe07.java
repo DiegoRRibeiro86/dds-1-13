@@ -16,17 +16,20 @@ public class EstruturaDecisãoExe07 {
         Double segundoValor = scanner.nextDouble();
         System.out.print("Digite o terceiro valor: ");
         Double terceiroValor = scanner.nextDouble();
-
-        if (primeiroValor > segundoValor && primeiroValor > terceiroValor){
+        Boolean primeiroValorEMaior = primeiroValor >= segundoValor && primeiroValor > terceiroValor;
+        Boolean segundoValorEMaior = segundoValor >= primeiroValor && segundoValor > terceiroValor;
+        Boolean primeiroValorEMenor = primeiroValor < segundoValor && primeiroValor < terceiroValor;
+        Boolean segundoValorEMenor = segundoValor < primeiroValor && segundoValor < terceiroValor;
+        if (primeiroValorEMaior){
             System.out.println("\nO maior valor é: " + primeiroValor);
-        } else if (segundoValor > primeiroValor && segundoValor > terceiroValor){
+        } else if (segundoValorEMaior){
             System.out.println("\nO maior valor é: " + segundoValor);
         } else {
             System.out.println("\nO Maior valor é: " + terceiroValor);
         }
-        if (primeiroValor < segundoValor && primeiroValor < terceiroValor){
+        if (primeiroValorEMenor){
             System.out.println("\nO menor valor é: " + primeiroValor);
-        } else if (segundoValor < primeiroValor && segundoValor < terceiroValor){
+        } else if (segundoValorEMenor){
             System.out.println("\nO menor valor é: " + segundoValor);
         } else {
             System.out.println("\nO menor valor é: " + terceiroValor);

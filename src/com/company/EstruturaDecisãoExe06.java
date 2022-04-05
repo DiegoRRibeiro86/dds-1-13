@@ -16,10 +16,11 @@ public class EstruturaDecisãoExe06 {
         Double segundoValor = scanner.nextDouble();
         System.out.print("Digite o terceiro valor: ");
         Double terceiroValor = scanner.nextDouble();
-
-        if (primeiroValor > segundoValor && primeiroValor > terceiroValor){
+        Boolean primeiroNumeroEmaior = primeiroValor >= segundoValor && primeiroValor > terceiroValor;
+        Boolean segundoNumeroEmaior = segundoValor >= primeiroValor && segundoValor > terceiroValor;
+        if (primeiroNumeroEmaior){
             System.out.print("\nO maior valor é: " + primeiroValor);
-        } else if (segundoValor > primeiroValor && segundoValor > terceiroValor){
+        } else if (segundoNumeroEmaior){
             System.out.println("\nO maior valor é: " + segundoValor);
         } else {
             System.out.println("\nO Maior valor é: " + terceiroValor);

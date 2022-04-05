@@ -32,11 +32,13 @@ public class Exercicio02 {
         Double oitentaPorcentoDoSalario = 0.8 * mediaSalarialAnual;
         Double oitentaPorcentoDoValorDaMeta = 0.8 * metaDeFaturamentoAnual;
         Double bonus80Porcento =  oitentaPorcentoDoSalario + mediaSalarialAnual;
+        Boolean faturoupeloMenos80PorCento = faturamentoRealAnual < metaDeFaturamentoAnual ||
+                faturamentoRealAnual >= oitentaPorcentoDoValorDaMeta;
+        Boolean ganhouBonus = faturamentoRealAnual >= metaDeFaturamentoAnual;
 
-
-        if (faturamentoRealAnual >= metaDeFaturamentoAnual){
+        if (ganhouBonus){
             System.out.println("Você ganhará um bônus equivalente a: " + bonus + ".");
-        } else if (faturamentoRealAnual < metaDeFaturamentoAnual || faturamentoRealAnual >= oitentaPorcentoDoValorDaMeta){
+        } else if (faturoupeloMenos80PorCento){
             System.out.println("Você receberá um bônus de 80% equivalente a: " + bonus80Porcento);
         }
 

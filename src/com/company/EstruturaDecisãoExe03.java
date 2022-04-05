@@ -10,16 +10,21 @@ import java.util.Scanner;
 public class EstruturaDecisãoExe03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Defina seu sexo: [M] Masculino | [F] Feminino: ");
         Character escolhaSexo = scanner.next().charAt(0);
 
-        if (escolhaSexo == 'F' || escolhaSexo == 'f') {
-            System.out.println("[" + escolhaSexo + "]" + " Feminino.");
-        } else if (escolhaSexo == 'M' || escolhaSexo == 'm'){
-            System.out.println("[" + escolhaSexo + "]" + " Masculino.");
-        } else{
-            System.out.print("\nSexo inválido.");
+        Boolean sexoMasculino = escolhaSexo.equals('M')  || escolhaSexo.equals('m');
+        Boolean sexoFeminino = escolhaSexo.equals('F') || escolhaSexo.equals('f');
+        Boolean imputInvalido = !sexoMasculino && !sexoFeminino;
+
+        if (imputInvalido) {
+            System.out.println("Imput inválido.");
+        } else {
+            if (sexoFeminino) {
+                System.out.println("[" + escolhaSexo + "]" + " Feminino.");
+            } else if (sexoMasculino) {
+                System.out.println("[" + escolhaSexo + "]" + " Masculino.");
+            }
         }
         scanner.close();
     }
