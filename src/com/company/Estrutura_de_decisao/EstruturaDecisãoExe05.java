@@ -7,7 +7,7 @@
 *
 * */
 
-package com.company;
+package com.company.Estrutura_de_decisao;
 
 import java.util.Scanner;
 
