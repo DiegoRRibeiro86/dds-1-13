@@ -5,8 +5,8 @@ public class exercicio02 {
         Produto produto = new Produto();
         produto.nome = "Carro";
         produto.precoUnitario = 30.000;
-        produto.quantidadeEmEstoque = 9;
+        produto.quantidadeEmEstoque = 10;
         System.out.println("É necessário repor estoque do produto " + produto.nome + "? " + produto.eNecessarioReporEstoque());
-    }
 
+    }
 }

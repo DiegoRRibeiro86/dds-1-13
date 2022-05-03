@@ -12,6 +12,9 @@ public class Produto {
     Integer quantidade;
 
     Boolean eNecessarioReporEstoque() {
-        return quantidadeEmEstoque < Produto.QUANTIDADE_MINIMA_ESTOQUE;
+        if (quantidadeEmEstoque < Produto.QUANTIDADE_MINIMA_ESTOQUE) {
+            return true;
+        }
+        return false;
     }
 }
