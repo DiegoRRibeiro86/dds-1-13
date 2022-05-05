@@ -23,7 +23,7 @@ public class Exercicio03 {
         pedido.setSubtotal(25.000);
         pedido.setDesconto(2.500);
       //  pedido.setTotal(22.500);
-        System.out.println("Código: " + pedido.getCodigo() + "Subtotal: " + pedido.getSubtotal() +
-         "Desconto: " + pedido.getDesconto() + "Total: " + pedido.getTotal() + "Total: " + pedido.getTotal());
+        System.out.println(" Código: " + pedido.getCodigo() + " Subtotal: " + pedido.getSubtotal() +
+         " Desconto: " + pedido.getDesconto() + " Total: " + pedido.getTotal());
     }
 }
