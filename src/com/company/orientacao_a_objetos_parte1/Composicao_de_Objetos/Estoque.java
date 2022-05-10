@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Estoque {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner;
         String arrayDeProdutos;
         String produtos;
 
         System.out.println("Quantos produtos deseja cadastrar: ");
-        double nprodutos =
+        double nprodutos = scanner.nextDouble();
 
-    for (int i = 0; i < ; i++) {
+    for (int i = 0; i < nprodutos; i++) {
         System.out.println("Digite o nome do produto: ");
 
 
