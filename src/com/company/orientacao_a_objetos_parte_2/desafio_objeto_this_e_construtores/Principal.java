@@ -1,5 +1,8 @@
 package com.company.orientacao_a_objetos_parte_2.desafio_objeto_this_e_construtores;
 
+import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagar;
+import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.Fornecedor;
+
 public class Principal {
     public static void main(String[] args) {
         Fornecedor imobiliaria = new Fornecedor();
