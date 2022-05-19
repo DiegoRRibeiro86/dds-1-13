@@ -1,13 +1,12 @@
 package com.company.orientacao_a_objetos_parte_2.desafio_objeto_this_e_construtores;
 
 import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagar;
-import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.Fornecedor;
 
 public class Principal {
     public static void main(String[] args) {
-        Fornecedor imobiliaria = new Fornecedor();
+        com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor imobiliaria = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
         imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
-        Fornecedor mercado = new Fornecedor();
+        com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor mercado = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
         mercado.setNome("Mercado do João");
         ContaPagar conta1 = new ContaPagar();
         conta1.setDescricao("Aluguel da matriz");

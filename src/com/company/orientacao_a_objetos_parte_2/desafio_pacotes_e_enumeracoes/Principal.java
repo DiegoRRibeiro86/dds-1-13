@@ -27,9 +27,9 @@ Boa sorte!
 
 public class Principal {
 	public static void main(String[] args) {
-		Fornecedor imobiliaria = new Fornecedor();
+		com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor imobiliaria = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
 		imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
-		Fornecedor mercado = new Fornecedor();
+		com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor mercado = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
 		mercado.setNome("Mercado do João");
 		ContaPagar conta1 = new ContaPagar();
 		conta1.setDescricao("Aluguel da matriz");

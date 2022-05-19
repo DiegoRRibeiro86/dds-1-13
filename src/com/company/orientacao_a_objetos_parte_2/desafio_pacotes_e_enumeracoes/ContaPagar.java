@@ -1,10 +1,13 @@
 package com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes;
 
-public class ContaPagar {
+import com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Conta;
+import com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal;
+
+public class ContaPagar extends Conta {
     String descricao;
     double valor;
     String dataVencimento;
-    Fornecedor fornecedor;
+    Principal.Fornecedor fornecedor;
     private SituacaoConta situacaoConta;
 
     public ContaPagar(SituacaoConta situacaoConta) {
@@ -21,7 +24,7 @@ public class ContaPagar {
         // assim, todas as contas a pagar instanciadas ficarão com o status PENDENTE por padrão.
     }
 
-    public ContaPagar(String descricao, double valor, String dataVencimento, Fornecedor fornecedor) {
+    public ContaPagar(String descricao, double valor, String dataVencimento, Principal.Fornecedor fornecedor) {
         this();
         this.descricao = descricao;
         this.valor = valor;
@@ -29,7 +32,7 @@ public class ContaPagar {
         this.fornecedor = fornecedor;
     }
 
-    public ContaPagar(Fornecedor mercado, String comprasDoMes, double v, String s) {
+    public ContaPagar(Principal.Fornecedor mercado, String comprasDoMes, double v, String s) {
     }
 
     public void pagar() {
@@ -83,11 +86,11 @@ public class ContaPagar {
             this.dataVencimento = dataVencimento;
         }
 
-        public Fornecedor getFornecedor () {
+        public Principal.Fornecedor getFornecedor () {
             return fornecedor;
         }
 
-        public void setFornecedor (Fornecedor fornecedor){
+        public void setFornecedor (Principal.Fornecedor fornecedor){
             this.fornecedor = fornecedor;
 
         }
