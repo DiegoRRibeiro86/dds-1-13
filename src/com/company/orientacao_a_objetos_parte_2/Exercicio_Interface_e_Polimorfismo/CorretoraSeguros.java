@@ -2,10 +2,13 @@ package com.company.orientacao_a_objetos_parte_2.Exercicio_Interface_e_Polimorfi
 
 public class CorretoraSeguros {
 
-    public void fazerPropostaSeguro(Carro carro, Imovel imovel){
-        
-    }
+    public void fazerPropostaSeguro(Seguravel objetoSeguravel){
+        System.out.println("----------------------------------");
+        System.out.println("Corretora de Seguros - Proposta");
+        System.out.println("----------------------------------");
+        System.out.println(objetoSeguravel.obterDescricao());
+        System.out.println("Valor da apólice: " + objetoSeguravel.calcularValorApolice());
+        System.out.println("----------------------------------");
 
-    public void fazerPropostaSeguro() {
     }
 }

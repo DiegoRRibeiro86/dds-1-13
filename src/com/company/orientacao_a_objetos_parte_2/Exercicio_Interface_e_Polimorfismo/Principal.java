@@ -20,10 +20,11 @@ No método main(), instanciamos uma corretora de seguros, um carro e um imóvel,
  */
 public class Principal {
     public static void main(String[] args) {
-        CorretoraSeguros novobem = new CorretoraSeguros();
-        Carro carro = new Carro();
-        Imovel imovel = new Imovel();
-        novobem.fazerPropostaSeguro(carro,imovel);
+        CorretoraSeguros corretora = new CorretoraSeguros();
+        Carro meuCarro = new Carro(2012,45000);
+        Imovel minhaCasa = new Imovel(920000,320);
+        corretora.fazerPropostaSeguro(meuCarro);
+        corretora.fazerPropostaSeguro(minhaCasa);
 
     }
 
