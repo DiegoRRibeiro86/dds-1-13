@@ -21,7 +21,7 @@ public class Principal {
         double numeroAleatorio = Math.random() * 60;
 
         System.out.print("Quantos jogos gostaria de fazer? ");
-        int[] jogosFeitos = {};
+        int jogosFeitos = scanner.nextInt();
 
         for (int i = 0; i <= 5; i++) {
             if (numeroAleatorio == numeroAleatorio) {
