@@ -23,12 +23,15 @@ public class Principal {
         System.out.print("Quantos jogos gostaria de fazer? ");
         int jogosFeitos = scanner.nextInt();
 
-        for (int i = 0; i <= 5; i++) {
-            if (numeroAleatorio == numeroAleatorio) {
-                numeroAleatorio = Math.random() * 60;
+        for (int j = 0; j < jogosFeitos; j++) {
+            System.out.println("\n");
+            for (int i = 0; i <= 5; i++) {
+                if (numeroAleatorio == numeroAleatorio) {
+                    numeroAleatorio = Math.random() * 60;
 
-            System.out.print(" " + Math.round(numeroAleatorio));
-        }
+                    System.out.print(" " + Math.round(numeroAleatorio));
+                }
+            }
         }
     }
 }
