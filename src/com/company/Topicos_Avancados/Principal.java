@@ -21,14 +21,13 @@ public class Principal {
         double numeroAleatorio = Math.random() * 60;
 
         System.out.print("Quantos jogos gostaria de fazer? ");
-        int jogosFeitos = scanner.nextInt();
+        int[] jogosFeitos = {};
 
-        for (int i = 0; i <= jogosFeitos; i++) {
+        for (int i = 0; i <= 5; i++) {
             if (numeroAleatorio == numeroAleatorio) {
                 numeroAleatorio = Math.random() * 60;
-            }
-            for (int j =0; j <= 5; j++) {
-            System.out.print(Math.round(numeroAleatorio));
+
+            System.out.print(" " + Math.round(numeroAleatorio));
         }
         }
     }
