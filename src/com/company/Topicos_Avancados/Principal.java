@@ -26,12 +26,16 @@ public class Principal {
         for (int j = 0; j < jogosFeitos; j++) {
             System.out.println("\n");
             for (int i = 0; i <= 5; i++) {
-                if (numeroAleatorio == numeroAleatorio) {
+                if (obterSorteio(numeroAleatorio)) {
                     numeroAleatorio = Math.random() * 60;
 
-                    System.out.print(" " + Math.round(numeroAleatorio));
+                    System.out.print(" "+"["+ Math.round(numeroAleatorio) + "]");
                 }
             }
         }
+    }
+
+    private static boolean obterSorteio(double numeroAleatorio) {
+        return numeroAleatorio > 1 && numeroAleatorio < 60 || numeroAleatorio == numeroAleatorio;
     }
 }
