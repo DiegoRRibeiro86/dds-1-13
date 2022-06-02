@@ -11,8 +11,9 @@ public class CalculadoraGravidez {
 	    public CalculadoraGravidez(Date.dataUltimoPeriodoMenstrual) {
             this.dataUltimoPeriodoMenstrual = dataUltimoPeriodoMenstrual;
 
+            Date data = new Date();
         }
-        Date data = new Date();
+
         private Calendar converterDateParaCalendar(Date data) {
             Calendar calendar = new GregorianCalendar();
             calendar.setTime(data);
