@@ -31,13 +31,13 @@ public class Principal {
 		imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
 		com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor mercado = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
 		mercado.setNome("Mercado do João");
-		ContaPagar conta1 = new ContaPagar();
+		ContaPagarPacotesEEnumeracoes conta1 = new ContaPagarPacotesEEnumeracoes();
 		conta1.setDescricao("Aluguel da matriz");
 		conta1.setValor(1230d);
 		conta1.setDataVencimento("10/05/2012");
 		conta1.setFornecedor(imobiliaria);
-		ContaPagar conta2 = new ContaPagar(mercado, "Compras do mês", 390d, "19/05/2012");
-		ContaPagar conta3 = new ContaPagar(mercado, "Aluguel da filial", 700d, "11/05/2012");
+		ContaPagarPacotesEEnumeracoes conta2 = new ContaPagarPacotesEEnumeracoes(mercado, "Compras do mês", 390d, "19/05/2012");
+		ContaPagarPacotesEEnumeracoes conta3 = new ContaPagarPacotesEEnumeracoes(mercado, "Aluguel da filial", 700d, "11/05/2012");
 		// pagamento de conta pendente (ok, deve funcionar)
 		conta1.pagar();
 		// tentativa de pagar uma conta cancelada (não deve aceitar pagamento)

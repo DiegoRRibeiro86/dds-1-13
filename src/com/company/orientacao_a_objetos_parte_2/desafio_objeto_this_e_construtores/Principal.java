@@ -1,6 +1,6 @@
 package com.company.orientacao_a_objetos_parte_2.desafio_objeto_this_e_construtores;
 
-import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagar;
+import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagarPacotesEEnumeracoes;
 
 public class Principal {
     public static void main(String[] args) {
@@ -8,13 +8,13 @@ public class Principal {
         imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
         com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor mercado = new com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal.Fornecedor();
         mercado.setNome("Mercado do João");
-        ContaPagar conta1 = new ContaPagar();
+        ContaPagarPacotesEEnumeracoes conta1 = new ContaPagarPacotesEEnumeracoes();
         conta1.setDescricao("Aluguel da matriz");
         conta1.setValor(1230d);
         conta1.setDataVencimento("10/05/2012");
         conta1.setFornecedor(imobiliaria);
-        ContaPagar conta2 = new ContaPagar("Compras do mês", 390d, "19/05/2012", mercado);
-        ContaPagar conta3 = new ContaPagar("Aluguel da filial", 700d, "11/05/2012", mercado);
+        ContaPagarPacotesEEnumeracoes conta2 = new ContaPagarPacotesEEnumeracoes("Compras do mês", 390d, "19/05/2012", mercado);
+        ContaPagarPacotesEEnumeracoes conta3 = new ContaPagarPacotesEEnumeracoes("Aluguel da filial", 700d, "11/05/2012", mercado);
         conta1.pagar();
         conta2.pagar();
         conta3.pagar();

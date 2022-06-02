@@ -1,5 +1,5 @@
 package com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao;
-import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagar;
+import com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes.ContaPagarPacotesEEnumeracoes;
 
 /*
 Beba água, sente-se confortavelmente na cadeira, desligue a TV e feche a porta. Você precisará de bastante concentração para fazer esse desafio!
@@ -18,7 +18,7 @@ A classe ContaReceber possui o método cancelar(). Isso é uma sobreposição ao
 Para testar se suas classes estão funcionando, compile também e execute a classe Principal abaixo, que foi modificada:
  */
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws OperacaoContaException {
         // instanciando fornecedores
         Fornecedor imobiliaria = new Fornecedor();
         imobiliaria.setNome("Casa & Cia Negócios Imobiliários");
@@ -30,12 +30,12 @@ public class Principal {
         Cliente telecom = new Cliente();
         telecom.setNome("FoneNet Telecomunicações");
         // instanciando contas a pagar
-        ContaPagar contaPagar1 = new ContaPagar();
+        ContaPagarPacotesEEnumeracoes contaPagar1 = new ContaPagarPacotesEEnumeracoes();
         contaPagar1.setDescricao("Aluguel da matriz");
         contaPagar1.setValor(1230d);
         contaPagar1.setDataVencimento("10/05/2012");
         contaPagar1.setFornecedor(imobiliaria);
-        ContaPagar contaPagar2 = new ContaPagar(mercado, "Compras do mês", 390d, "19/05/2012");
+        ContaPagarPacotesEEnumeracoes contaPagar2 = new ContaPagarPacotesEEnumeracoes(mercado, "Compras do mês", 390d, "19/05/2012");
         // instanciando contas a receber
         ContaReceber contaReceber1 = new ContaReceber();
         contaReceber1.setDescricao("Desenvolvimento de projeto de logística em Java");

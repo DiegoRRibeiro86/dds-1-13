@@ -3,14 +3,14 @@ package com.company.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeracoes;
 import com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Conta;
 import com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.Principal;
 
-public class ContaPagar extends Conta {
+public class ContaPagarPacotesEEnumeracoes extends Conta {
     String descricao;
     double valor;
     String dataVencimento;
     Principal.Fornecedor fornecedor;
     private SituacaoConta situacaoConta;
 
-    public ContaPagar(SituacaoConta situacaoConta) {
+    public ContaPagarPacotesEEnumeracoes(com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.SituacaoConta situacaoConta) {
         this.situacaoConta = situacaoConta;
     }
 
@@ -18,13 +18,13 @@ public class ContaPagar extends Conta {
         return situacaoConta;
     }
 
-    public ContaPagar() {
+    public ContaPagarPacotesEEnumeracoes() {
         this.situacaoConta = SituacaoConta.PENDENTE;    // No construtor padrão (o que não recebe parâmetros) da classe ContaPagar,
         // atribua a constante PENDENTE (da SituacaoConta) à variável "situacaoConta",
         // assim, todas as contas a pagar instanciadas ficarão com o status PENDENTE por padrão.
     }
 
-    public ContaPagar(String descricao, double valor, String dataVencimento, Principal.Fornecedor fornecedor) {
+    public ContaPagarPacotesEEnumeracoes(String descricao, double valor, String dataVencimento, Principal.Fornecedor fornecedor) {
         this();
         this.descricao = descricao;
         this.valor = valor;
@@ -32,7 +32,7 @@ public class ContaPagar extends Conta {
         this.fornecedor = fornecedor;
     }
 
-    public ContaPagar(Principal.Fornecedor mercado, String comprasDoMes, double v, String s) {
+    public ContaPagarPacotesEEnumeracoes(Principal.Fornecedor mercado, String comprasDoMes, double v, String s) {
     }
 
     public void pagar() {
@@ -70,7 +70,7 @@ public class ContaPagar extends Conta {
             this.descricao = descricao;
         }
 
-        public double getValor () {
+        public Double getValor () {
             return valor;
         }
 
