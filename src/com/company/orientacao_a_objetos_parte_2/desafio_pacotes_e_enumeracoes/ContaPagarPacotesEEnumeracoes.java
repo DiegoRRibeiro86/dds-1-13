@@ -10,7 +10,7 @@ public class ContaPagarPacotesEEnumeracoes extends Conta {
     Principal.Fornecedor fornecedor;
     private SituacaoConta situacaoConta;
 
-    public ContaPagarPacotesEEnumeracoes(com.company.orientacao_a_objetos_parte_2.desafio_heranca_e_sobreposicao.SituacaoConta situacaoConta) {
+    public ContaPagarPacotesEEnumeracoes(SituacaoConta situacaoConta) {
         this.situacaoConta = situacaoConta;
     }
 
