@@ -86,7 +86,6 @@ private Date converterEmData(String texto) throws ParseException {
  */
 
 import java.util.Date;
-import java.util.Scanner;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
@@ -94,7 +93,7 @@ import java.util.Locale;
 
 public class Principal {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         new Principal();
     }
     public Principal() {

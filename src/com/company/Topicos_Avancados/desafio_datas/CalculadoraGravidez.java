@@ -5,10 +5,10 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class CalculadoraGravidez {
-            private Date dataUltimoPeriodoMenstrual;
+            private final Date dataUltimoPeriodoMenstrual;
 
-	    public CalculadoraGravidez(Date Date dataUltimoPeriodoMenstrual) {
-            this.dataUltimoPeriodoMenstrual = this.dataUltimoPeriodoMenstrual;
+	    public CalculadoraGravidez(Date dataUltimoPeriodoMenstrual) {
+            this.dataUltimoPeriodoMenstrual = dataUltimoPeriodoMenstrual;
         }
 
         private Calendar converterDateParaCalendar (Date data) {
