@@ -1,13 +1,15 @@
 package com.company.Topicos_Avancados.desafio_datas;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class CalculadoraGravidez {
     public static void main(String[] args) {
-        private Date dataUltimoPeriodoMenstrual;
-
+        DateFormat dataUltimoPeriodoMenstrual = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println();
 	    public CalculadoraGravidez(Date.dataUltimoPeriodoMenstrual) {
             this.dataUltimoPeriodoMenstrual = dataUltimoPeriodoMenstrual;
 
