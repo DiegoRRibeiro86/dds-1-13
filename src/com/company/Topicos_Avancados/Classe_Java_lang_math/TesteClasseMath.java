@@ -1,4 +1,4 @@
-package com.company.Topicos_Avancados;
+package com.company.Topicos_Avancados.Classe_Java_lang_math;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.max;

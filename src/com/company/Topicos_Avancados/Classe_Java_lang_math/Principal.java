@@ -1,4 +1,4 @@
-package com.company.Topicos_Avancados;
+package com.company.Topicos_Avancados.Classe_Java_lang_math;
 /*
 A Mega-Sena é o jogo que paga milhões de reais para o acertador dos números sorteados.
 Em um jogo comum, os jogadores devem marcar 6 números entre os 60 disponíveis, sendo de 1 a 60.
