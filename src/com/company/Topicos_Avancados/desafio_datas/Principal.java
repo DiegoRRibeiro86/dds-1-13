@@ -93,7 +93,11 @@ import java.text.ParseException;
 import java.util.Locale;
 
 public class Principal {
+
     public static void main(String args[]) {
+        new Principal();
+    }
+    public Principal() {
         Scanner entrada = new Scanner(System.in);
         try {
             System.out.println("Data do último período menstrual (dd/mm/aaaa):");
@@ -119,12 +123,11 @@ public class Principal {
                 new Locale("pt", "br"));
         return formatador.format(data);
     }
+
+   // O método converterEmData() recebe um parâmetro do tipo String e deve retornar um tipo Date. Use o que aprendeu na aula sobre datas para converter String em Date no formato "dd/MM/yyyy".
     private Date converterEmData(String texto) throws ParseException {
-        // implementar conversão de texto para data no formato dd/MM/yyyy
+        DateFormat conversor = new SimpleDateFormat("dd/MM/yyyy");// implementar conversão de texto para data no formato dd/MM/yyyy
+        return conversor.parse(texto);
     }
 }
-   // O método converterEmData() recebe um parâmetro do tipo String e deve retornar um tipo Date. Use o que aprendeu na aula sobre datas para converter String em Date no formato "dd/MM/yyyy".
-private Date converterEmData(String texto) throws ParseException {
-        // implementar conversão de texto para data no formato dd/MM/yyyy
-        }
-}
+

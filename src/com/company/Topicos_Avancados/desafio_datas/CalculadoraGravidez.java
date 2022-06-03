@@ -1,34 +1,32 @@
 package com.company.Topicos_Avancados.desafio_datas;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class CalculadoraGravidez {
-    public static void main(String[] args) {
-        DateFormat dataUltimoPeriodoMenstrual = new SimpleDateFormat("dd/MM/yyyy");
-        System.out.println();
-	    public CalculadoraGravidez(Date.dataUltimoPeriodoMenstrual) {
-            this.dataUltimoPeriodoMenstrual = dataUltimoPeriodoMenstrual;
+            private Date dataUltimoPeriodoMenstrual;
 
-            Date data = new Date();
+	    public CalculadoraGravidez(Date Date dataUltimoPeriodoMenstrual) {
+            this.dataUltimoPeriodoMenstrual = this.dataUltimoPeriodoMenstrual;
         }
 
-        private Calendar converterDateParaCalendar(Date data) {
+        private Calendar converterDateParaCalendar (Date data) {
             Calendar calendar = new GregorianCalendar();
             calendar.setTime(data);
             return calendar;
         }
         public Date calcularDataEstimadaConcepcao() {
-            // implementar cálculo de data estimada da concepção
-            // 2 semanas após a data do último período menstrual
+            Calendar dataEstimadaDaConcepcao = this.converterDateParaCalendar(this.dataUltimoPeriodoMenstrual);   // implementar cálculo de data estimada da concepção
+            dataEstimadaDaConcepcao.add(Calendar.WEEK_OF_YEAR,2);                                          // 2 semanas após a data do último período menstrual
+            return dataEstimadaDaConcepcao.getTime();
         }
+
         public Date calcularDataEstimadaParto() {
-            // implementar cálculo de data estimada para parto
-            // 40 semanas após a data do último período menstrual
+            Calendar dataEstimadaParto = this.converterDateParaCalendar(this.dataUltimoPeriodoMenstrual);          // implementar cálculo de data estimada para parto
+            dataEstimadaParto.add(Calendar.WEEK_OF_YEAR,40);                                                // 40 semanas após a data do último período menstrual
+
+            return dataEstimadaParto.getTime();
         }
-    }
-    }
+
 }
