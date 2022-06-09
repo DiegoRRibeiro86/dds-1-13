@@ -8,7 +8,8 @@ import java.math.BigDecimal;
 
 public class Governo {
     // armazena uma lista de políticos por estado da federação
-    private Map<String, List<Politico>> partidosPoliticos;
+
+    private final Map<String, List<Politico>> partidosPoliticos;
 
     public Governo() {
         this.partidosPoliticos = new HashMap<String, List<Politico>>();
