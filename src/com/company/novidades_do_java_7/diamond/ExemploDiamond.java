@@ -1,4 +1,4 @@
-package com.company.novidades_do_java.diamond;
+package com.company.novidades_do_java_7.diamond;
 
 import java.util.*;
 

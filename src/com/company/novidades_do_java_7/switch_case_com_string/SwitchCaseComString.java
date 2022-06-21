@@ -1,4 +1,4 @@
-package com.company.novidades_do_java.switch_case_com_string;
+package com.company.novidades_do_java_7.switch_case_com_string;
 
 public class SwitchCaseComString {
     public static void main(String[] args) {

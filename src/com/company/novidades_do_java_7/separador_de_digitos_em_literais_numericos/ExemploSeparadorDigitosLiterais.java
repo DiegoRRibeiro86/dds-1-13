@@ -1,4 +1,4 @@
-package com.company.novidades_do_java.separador_de_digitos_em_literais_numericos;
+package com.company.novidades_do_java_7.separador_de_digitos_em_literais_numericos;
 
 public class ExemploSeparadorDigitosLiterais {
     public static void main(String[] args) {
