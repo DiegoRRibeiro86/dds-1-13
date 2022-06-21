@@ -8,7 +8,7 @@ public class ExemploJOptionPane2 {
         UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
 
         JOptionPane.showMessageDialog(null, "Seu cadastro foi realizado com sucesso!");
-        JOptionPane.showMessageDialog(null, "Atenção - e-mail não informado.", "Atenção!",
+        JOptionPane.showMessageDialog(null, "Atenção, e-mail não informado.", "Atenção!",
                 JOptionPane.WARNING_MESSAGE);
 
         JOptionPane.showMessageDialog(null, "Favor informar o CPF!", "Erro",
